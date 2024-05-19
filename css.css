@@ -533,3 +533,87 @@ button{
     width: 100%;
     transition: transform 0.5s ease-in-out;
 }
+
+footer {
+    width: 100%;
+    background-color: var(--bs-primary);
+    margin: 50px auto;
+    height: 900px;
+    font-family: "Poppins", sans-serif ;
+}
+
+.footer-box{
+    width: 1700px;
+    margin: 50px  auto;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.f{
+    width: 1600px;
+    margin: 15px;
+    height: 750px;
+    flex-grow: +1;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+.f1{
+    width: 600px;
+}
+.f h1{
+    color: var(--bs-white);
+    width:  auto;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 5px;
+    padding: 10px;
+}
+.f a{
+    display: block;
+    text-transform: capitalize;
+    color: var(--bs-white);
+    width:  200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 2px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.f1 p{
+    width:  450px;
+    height: 250px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: var(--bs-light);
+    margin-top: 30px;
+    padding: 10px;
+}
+.f4 p{
+    width:  auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: lighter;
+    color: var(--bs-light);
+    margin-top: 30px;
+    padding: 10px;
+}
+span{
+    display: block;
+}
+
+.f2{
+    width: 300px;
+}
+.f3{
+    width: 300px;
+}
+.f4{
+    width: 300px;
+}
