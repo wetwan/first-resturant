@@ -34,8 +34,8 @@
 }
 
 .containner{
-    height: 100vh;
-    width:100%;
+    height: 100%;
+    width:100vw;
     display: grid;
     grid-template-columns: 18% 81%;
     font-family: "Poppins", sans-serif ;
@@ -45,28 +45,41 @@
     line-height: 1.8;
 }
 .nav{
+ 
+    z-index: 1000000000000000000;
     background-color: var(--bs-white);
     font-family: var(--bs-font-sans-serif);
 }
 
 .body{
+    width: 100%;
     font-family: var(--bs-font-sans-serif);
 }
 body{
     background-color: var(--bs-light);
     height: 100vh;
+    width: 100vw;
     font-family: var(--bs-font-sans-serif);
+    transition: good 5s ease-in 2s forwards;
 }
 .logo{
-    margin: 0 100px;
+    position: absolute;
+    top: 0;
+   
+ 
+    margin: 0 50px;
+
 }
 .nav-list{
-   
-    position: absolute;
-    top: 450px;
-    margin: 0px 100px;
+  
+
+   position: absolute;
+   top:60px;
+   left: 50px;
+ 
+    margin: 50px auto;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 .nav-list li{
    
@@ -74,21 +87,25 @@ body{
 }
 .nav-list a{
    text-decoration: none;
-   font-size:20px ;
+   font-size:10px ;
    font-weight: 900;
    color: var(--bs-dark);
    
 }
 .nav-list a:hover{
-  border-bottom:3px solid var(--bs-dark) ;
+  border-bottom: 3px solid var(--bs-dark) ;
+  transition: border 2s ease-in;
 }
 .book{
     font-family: var(--bs-font-sans-serif);
     position: absolute;
     bottom: 0;
-    margin: 20px 50px;
+    left: -17px;
+
+    margin: 20px ;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+
 }
 .book h4{ 
     font-size:16px ;
@@ -99,7 +116,7 @@ body{
 }
 .book a{
     text-decoration: none;
-    font-size:30px ;
+    font-size:20px ;
     font-weight: 900;
     color: var(--bs-dark);
     margin: 10px;
@@ -113,61 +130,71 @@ body{
     
 }
 .hero{
-    height: 1200px ;
+    height: 700px ;
     width: 100%;
     position: relative;
 }
 .hero .color{
-    height: 1100px;
+    height: 500px;
     background-color: var(--bs-primary);
-    width: 1400px;
+    width: 70%;
     position: absolute;
     top: 0;
     left: 0;
 }.hero .img{
     z-index: 20;
-    height: 900px;
+    height: 400px;
     background-color: var(--bs-danger);
-    width: 1400px;
+    width:70%;
     position: absolute;
     top: 0;
     right: 00px;
+    overflow: hidden;
 }
+img{
+    width: 100%;
+    height: inherit;
+}
+
 .hero .text{
     z-index: 30;
-    height: 450px;
-    width: 700px;
+    height: 310px;
+    width: 400px;
     position: absolute;
-    margin: 300px 300px;
+    margin: 100px 200px;
     text-transform: uppercase;
+
 }
 .hero .text h1{
     height: 320px;
     font-weight: 500;
     line-height: 1.2;
-    font-size: 4.2rem;
+    font-size: 2.2rem;
     text-align: justify;
-    width: 650px;
+    width: 350px;
     position: absolute;
     color: var(--bs-white);
     padding: 20px;
+    /* z-index: 10000000; */
 }
  .button{
     position: absolute;
+    margin: 10px auto;
     bottom: 0;
     text-transform: uppercase;
-    height: 100px;
-    width: 500px;
+    height: 80px;
+    width: 350px;
     display: flex;
+
 }
 button{
     background-color: transparent;
     text-transform: uppercase;
-    height: 80px;
+    height: 50px;
     border: 1px solid var(--bs-white);
     color: var(--bs-white);
-    width: 250px;
-    margin: 0 10px;
+    width: 150px;
+    margin: 10px auto;
     border-radius: 5px;
     font-weight: 500;
     line-height: 1.5;
@@ -195,24 +222,26 @@ button{
 }
 
 .offers{
-    height: 1600px;
+    height: auto;
     width:100%;
 }
 .offers section{
-    width:100%;
+    width:98%;
     font-family: "Poppins", sans-serif ;
-    margin: 05px 05px;
-    height: 1300px;
+    margin: 05px auto;
+    height: auto;
+  
 }
 .h1{
+
     height: 150px;
-    width: 1000px;
-    margin: 05px 500px;
-    text-align: center;
+    width: 50%;
+    margin: 05px auto;
+   
 }
 .h1 p{
     height: 50px;
-    width: 500px;
+    width: 200px;
     margin: 05px 200px;
     text-align: center;
     font-size: 22px;
@@ -223,31 +252,32 @@ button{
 .h1 h3{
     text-transform: uppercase;
     height: 90px;
-    width: 800px;
-    margin: 05px 100px ;
+    width: 400px;
+    margin: 05px 00px ;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.1;
     font-weight: 900;
 }
 .offers .cover{
-    
-    height: 1100px ;
-    width: 2000px;
-    margin: 10px 15px;
+  
+    height: 600px ;
+    width: 98%;
+    margin: 10px auto;
 }
 .cover .boxs, .cover .boxss{
-    height: 500px ;
-    margin: 0 15px;
+
+    margin: 2px 15px;
     display: flex;
-}
-.cover .boxs{
-    margin-top: 15px;
+    align-items: center;
+  
 }
 
+
 .cover .box1{
-    height:500px ;
-    width: 2000px;
+
+    height:300px ;
+    width: 250px;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -261,16 +291,19 @@ button{
     
 }
 .boxp h2{
+    margin: 2px;
+
     text-align: center;
-    height: 60px;
-    font-size: 30px;
+    height: 34px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 2.2;
+    line-height:1.;
 }
 .boxp p {
     text-align: center;
-    height: 300px;
-    font-size: 20px;
+    height: auto;
+
+    font-size: 10px;
     font-weight: thin;
     line-height: 2.2;
     margin: 5px;
@@ -278,12 +311,13 @@ button{
 }
 .boxp h3{
     text-align: center;
-    height: 70px;
+    height: 40px;
+
     font-size: 27px;
     font-weight: bold;
-    line-height: 3.5;
-    margin-top: 40px;
+    line-height: 1.1;
     padding: 5px;
+    margin: 5px;
     color: var(--bs-green);
 }
 
@@ -306,57 +340,58 @@ button{
 
 
 .about{
-    height: 1200px ;
+    height: 100vh;
     width: 100%;
     position: relative;
     font-family: "Poppins", sans-serif ;
 }
 .cuisine{
-    height: 1100px;
+    height: 97%;
    
-     width: 1050px;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .about-color{
-    height: 1100px;
+    height: 40%;
     background-color: var(--bs-primary);
-    width: 1050px;
-    position: absolute;
-    top: 0;
-    right: 00px;
-}
-.about-image{ 
-    z-index: 20;
-    height: 700px;
-    width: 1100px;
+    width: 40%;
+
     position: absolute;
     top: 200px;
     right: 100px;
+}
+.about-image{ 
+    z-index: 20;
+    height: 35%;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+    right: 00px;
     margin: auto;
     overflow: hidden;
+    background-color: #000;
 }
 .about-image img{ 
-    height: 700px;
+    width: 100%;
+    height: inherit;
   
 }
 .about-content{
     z-index: 20;
-    height: 700px;
-    width: 600px;
+    height: auto;
+    width: 450px;
     position: absolute;
-    top: 200px;
-    left: 70px;
+    top: 100px;
+    left: 30px;
     padding: 10px;
 }
 .about-content h1{
+    width: 400px;
    height: 70px;
    margin: 5px;
    font-size: 3rem;
     color: #000;   
 }
 .about-content h2{
+    width: 400px;
    height: 25px;
    margin: 5px;
    font-size: 15px;
@@ -366,23 +401,31 @@ button{
     letter-spacing: .1rem;
 }
 .about-content p{
-    height: 200px;
+    width: 400px;
+    height: auto;
     margin: 5px;
     font-size: 14px;
-    line-height: 2.5;
+    line-height: 2;
 }
 .about-content ul{
-    height: 200px;
+    height: auto;
    margin: 5px;
+   width: 400px;
    
 }
 .about-content li{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: baseline;
     margin: 5px;
     height: 40px;
    text-align: justify;
    font-size: 19px;
    font-weight: normal;
    line-height: 1;
+   white-space: nowrap;
    padding: 5px;
 }
 
@@ -416,20 +459,23 @@ button{
 }
   
 .slideshow-container {
-    width: 1700px;
+    width: 100%;
     position: relative;
     margin: 50px auto;
-    height: 1000px;
+    height: 100vh;
     margin: auto;
 }
 .slid {
+   
     margin: 20px auto;
     padding: 10px;
     height: 700px;
-    min-width: 100%;
+    mwidth: 100%;
     transition: opacity 1s ease-in-out;
 }
 .customer{
+   
+   
     margin: 20px auto;
     padding: 10px;
     text-align: center;
@@ -439,6 +485,7 @@ button{
     margin-bottom: 20px;
 }
 .customer h2{
+   
     margin: 2px auto;
     padding: 10px;
     text-align: center;
@@ -449,6 +496,7 @@ button{
     letter-spacing: .1rem;
 }
 .customer h1{
+   
     margin: 2px auto;
     padding: 10px;
     text-align: center;
@@ -457,22 +505,24 @@ button{
     color: #000;   
 }
 .comment{
-    margin: 20px auto;
+    margin: 20px 200px;
+   
     padding: 10px;
     text-align: center;
     height: 600px;
     text-transform: uppercase;
-    width: 1500px;
+    width: 700px;
 }
 .comment img{
     margin: 20px auto;
-  
+   
     display: block;
     width: 150px;
     height: auto;
     border-radius: 50%;
 }
 .comment .span .dash{
+   
     border-radius: 0;
     margin: 10px auto;
     width: 70px;
@@ -528,6 +578,7 @@ button{
     background-color: rgba(0,0,0,0.8);
   } 
   .slides {
+  
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -535,26 +586,30 @@ button{
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     background-color: var(--bs-primary);
     margin: 50px auto;
-    height: 900px;
+    margin-bottom: 0;
+    height: auto;
     font-family: "Poppins", sans-serif ;
 }
 
 .footer-box{
-    width: 1700px;
+    width:100% ;
     margin: 50px  auto;
-    height: 800px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-grow: 1;
+    margin-bottom: 0px;
     justify-content: space-between;
 }
 .f{
     width: 1600px;
     margin: 15px;
-    height: 750px;
+    height: 400px;
     flex-grow: +1;
     letter-spacing: 3px;
     word-spacing: 2px;
